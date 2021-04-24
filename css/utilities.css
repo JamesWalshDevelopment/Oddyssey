@@ -1,0 +1,88 @@
+/********** Utilities **********/
+
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+
+/* Variables */
+
+:root {
+  /* colors */
+  --color-primary-light: #06daf7;
+  --color-priamry-dark: #172026;
+  --color-priamry-dark-2: #005ECE;
+  --color-secondary: #ff6ca8;
+  --color-light-grey: #E8E8E8;
+  --background-gradient: linear-gradient(135deg, rgba(40, 76, 178, 1) 0%, rgba(6, 218, 247, 1) 35%, rgba(255, 108, 168, 1) 100%);
+  --body-text: 'Poppins', sans-serif;
+  --display-text: 'Bebas Neue', cursive;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-2x1 {
+  /* height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center; */
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background-color: var(--color-light-grey);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+  padding: 20px;
+  margin: 10px;
+  color: var(--color-priamry-dark);
+}
+
+/* Typography */
+.heading-1 {
+  font-family: var(--display-text);
+  font-size: 5em
+}
+
+.heading-3 {
+  letter-spacing: 3px;
+  font-size: 1.25em;
+  font-family: var(--display-text);
+}
+
+.heading-2 {
+  text-transform: uppercase;
+  font-family: var(--display-text);
+  letter-spacing: 3px;
+  font-size: 2.25em;
+}
